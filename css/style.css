@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Karla", sans-serif;
+  background-color: hsl(218, 43%, 93%);
+}
+
+.container {
+  margin: 50px auto;
+  width: 90%;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 2px 2px 20px rgb(114, 114, 114);
+}
+
+/* SECTION 1 */
+.section-1 {
+  padding: 20px;
+  background-color: white;
+}
+h1 {
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 20px;
+}
+
+.paragraph-1 {
+  color: hsl(204, 43%, 93%);
+  line-height: 25px;
+}
+
+/* SECTION 2 */
+
+.section-2 {
+  background-color: hsl(179, 62%, 43%);
+  padding: 20px;
+}
+.section-2-block {
+  margin-bottom: 15px;
+}
+
+.twenty-nine {
+  color: white;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.per-month {
+  color: hsl(179, 58%, 53%);
+  margin-left: 10px;
+}
+
+h3 {
+  color: white;
+  margin-bottom: 15px;
+}
+
+.full-access {
+  color: white;
+  padding-bottom: 20px;
+}
+
+.button-box {
+  text-align: center;
+}
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  padding: 15px 30px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 700;
+  width: 90%;
+  box-shadow: 2px 2px 20px rgb(114, 114, 114);
+}
+/* SECTION 3 */
+
+.section-3 {
+  background-color: hsl(179, 58%, 53%);
+  padding: 20px;
+}
+
+h4 {
+  color: white;
+  padding-bottom: 20px;
+}
+
+ul li {
+  color: hsl(204, 43%, 93%);
+  text-decoration: none;
+  list-style: none;
+  line-height: 20px;
+}
