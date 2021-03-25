@@ -4,46 +4,48 @@
   box-sizing: border-box;
 }
 
-html {
+html { 
   font-family: "Karla", sans-serif;
   background-color: hsl(218, 43%, 93%);
 }
-
-.container {
-  margin: 50px auto;
-  width: 90%;
-  border-radius: 5px;
+.grid-container {
+  margin: 10vh auto;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 2px 2px 20px rgb(114, 114, 114);
+  box-shadow: 0 4px 10px rgba(97, 97, 98, 0.486);
+  
 }
 
-/* SECTION 1 */
-.section-1 {
+.box1 { 
+  grid-area: box1;
+  background-color: #fff;
   padding: 20px;
-  background-color: white;
 }
+  
 h1 {
   color: hsl(179, 62%, 43%);
   margin-bottom: 20px;
-}
+  }
+  
+  h2 {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 20px;
+  }
 
-h2 {
-  color: hsl(71, 73%, 54%);
-  margin-bottom: 20px;
-}
+  .paragraph-1 {
+    color: hsl(179, 58%, 53%);
+    line-height: 25px;
+  }
 
-.paragraph-1 {
-  color: hsl(204, 43%, 93%);
-  line-height: 25px;
-}
-
-/* SECTION 2 */
-
-.section-2 {
+.box2 { 
+  grid-area: box2;
   background-color: hsl(179, 62%, 43%);
   padding: 20px;
 }
-.section-2-block {
+
+  .section-2-block {
   margin-bottom: 15px;
 }
 
@@ -52,8 +54,8 @@ h2 {
   font-weight: 700;
   font-size: 30px;
 }
-
-.per-month {
+  
+  .per-month {
   color: hsl(179, 58%, 53%);
   margin-left: 10px;
 }
@@ -67,7 +69,8 @@ h3 {
   color: white;
   padding-bottom: 20px;
 }
-
+  
+  
 .button-box {
   text-align: center;
 }
@@ -80,15 +83,22 @@ h3 {
   color: white;
   font-weight: 700;
   width: 90%;
+  max-width: 300px;
   box-shadow: 2px 2px 20px rgb(114, 114, 114);
+  transition: all .2s ease-in;
 }
-/* SECTION 3 */
 
-.section-3 {
+.btn:hover {
+  background-color: hsl(71, 63%, 64%);
+  cursor: pointer;
+}
+  
+.box3 { 
+  grid-area: box3;
   background-color: hsl(179, 58%, 53%);
   padding: 20px;
 }
-
+  
 h4 {
   color: white;
   padding-bottom: 20px;
@@ -99,4 +109,30 @@ ul li {
   text-decoration: none;
   list-style: none;
   line-height: 20px;
+  margin-bottom: 5px;
 }
+
+@media (min-width: 700px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "box1 box1 . ."
+    "box2 box3 . .";  
+}
+/* 
+.box1 { 
+  grid-area: box1;
+  
+}
+ 
+.box2 { 
+  grid-area: box2;
+}
+  
+.box3 { 
+  grid-area: box3;
+}
+   */
